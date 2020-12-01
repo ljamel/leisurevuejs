@@ -2,8 +2,7 @@
   <div class="about">
 
     <link href="./src/assets/styles.css" rel="stylesheet">
-    <h1>Connection</h1>
-    <p>test page </p>
+    <h1>This is an about page</h1>
   </div>
 </template>
 <style>

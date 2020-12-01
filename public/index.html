@@ -1,17 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
+</head>
+<body class="body">
+
+<navigation v-if="showNavigation"></navigation>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="<%= BASE_URL %>leisure/html-final/images/favicon.ico" rel="icon" type="image/png">
+    <link href="http://fonts.googleapis.com/css?family=Domine:400,700%7CRoboto:400,300,500,700,900" rel="stylesheet" type="text/css">
+    <link href="<%= BASE_URL %>leisure/html-final/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="<%= BASE_URL %>leisure/html-final/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<%= BASE_URL %>leisure/html-final/css/owl.carousel.min.css" rel="stylesheet" media="screen">
+    <link href="<%= BASE_URL %>leisure/html-final/css/owl.theme.default.min.css" rel="stylesheet" media="screen">
+    <link href="<%= BASE_URL %>leisure/html-final/css/datepicker.css" rel="stylesheet" media="screen">
+    <link href="<%= BASE_URL %>leisure/html-final/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div id="site">
+    <navigation v-if="showNavigation"></navigation>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+    <article id="content">
+        <section class="container content-padding-lg">
+            <div class="row animated">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h1 class="text-center"><small>What can you do with the Leisure Template?</small>AWARD WINNING RESORT</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ornare eros. Ut pharetra ornare lorem, sit amet bibendum quam imperdiet ut.
+                    </p>
+                    <p>Duis diam eros, dignissim sed condimentum ac, vehicula nec nisl. Suspendisse condimentum libero tempus, accumsan augue et, varius dui. Morbi justo tortor, tincidunt ornare magna ut, molestie mattis enim. Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan.
+                    </p>
+                    <a href="resort.html" class="btn btn-inline">What's happening at the Leisure Center?</a>
+                </div><!-- .col-sm-8 -->
+            </div><!-- .row -->
+        </section><!-- .container -->
+        <section class="fullwidth-row">
+            <div class="container content-padding-xl">
+                <div class="row animated">
+                    <div class="col-sm-12 parallax-container" data-stellar-offset-parent="true" data-stellar-vertical-offset="150">
+                        <div class="content-column half text-center">
+                            <img src="<%= BASE_URL %>images/photo3.jpg" class="parallax-image img-responsive" data-stellar-ratio="1.15123" alt="">
+                            <img src="<%= BASE_URL %>images/photo2.jpg" class="parallax-image img-responsive" data-stellar-ratio="0.94456456" alt="">
+                            <img src="<%= BASE_URL %>images/photo1.jpg" class="parallax-image img-responsive" data-stellar-ratio="1.111111" alt="">
+                        </div><!-- .content-column -->
+                        <div class="content-column half last">
+                            <h2><small>Discover Nature at it's Finest</small>PLAY GOLF LIKE A PRO</h2>
+                            <p>Duis diam eros, dignissim sed condimentum ac, vehicula nec nisl. Suspendissecondimentum libero tempus, accumsan augue et, varius dui. Morbi justo tortor, tincidunt ornare magna ut, molestie mattis enim.
+                            </p>
+                            <p>Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                            </p>
+                            <a href="resort.html" class="btn btn-inline">Explore our Deluxe Golf Course</a>
+                        </div><!-- .content-column -->
+                    </div><!-- .parallax-container -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </section><!-- .fullwidth-row -->
+        <section class="container content-padding-lg">
+            <div class="row animated">
+                <aside class="col-sm-12">
+                    <h2 class="text-center"><small>What can you do at the Leisure Template?</small>LEISURE CLUB ACTIVITIES</h2>
+                    <div class="services-carousel">
+                        <div class="item">
+                            <a href="activities.html" class="link-image"><img src="images/spa.jpg" alt=""></a>
+                            <div class="item-content">
+                                <h4><a href="activities.html">Welness &amp; Spa Gateaway Weekend</a></h4>
+                                <p>Curabitur est gravida et libero vitae dictum. Magna pars studiorum, prodita quaerimus. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="children.html" class="link-image"><img src="images/pool.jpg" alt=""></a>
+                            <div class="item-content">
+                                <h4><a href="children.html">Indoor &amp; Outdoor Swimming Pools</a></h4>
+                                <p>Quam diu etiam furor iste tuus nos eludet? Curabitur est gravida et libero vitae dictum. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="dining.html" class="link-image"><img src="images/food.jpg" alt=""></a>
+                            <div class="item-content">
+                                <h4><a href="dining.html">International Cuisine for all Your Tastes</a></h4>
+                                <p>A communi observantia non est recedendum. Cum ceteris in veneratione tui montes. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="activities.html" class="link-image"><img src="images/sail.jpg" alt=""></a>
+                            <div class="item-content">
+                                <h4><a href="activities.html">Take our Yacht and Visit the Surroundings</a></h4>
+                                <p>Prima luce, cum quibus mons aliud  consensu ab eo. Quid securi etiam tamquam eu fugiat. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="rooms.html" class="link-image"><img src="images/room.jpg" alt=""></a>
+                            <div class="item-content">
+                                <h4><a href="rooms.html">Studios &amp; VIP Exclusive Apartments</a></h4>
+                                <p>Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="activities.html" class="link-image"><img src="images/fitness.jpg" alt=""></a>
+                            <div class="item-content">
+                                <h4><a href="activities.html">Pro Fitness Instructor for Every Day Classes</a></h4>
+                                <p>Praeterea iter est quasdam res quas ex communi. Vivamus sagittis lacus vel augue laoreet. </p>
+                            </div>
+                        </div>
+                    </div><!-- .services-carousel -->
+                </aside><!-- .col-sm-12 -->
+            </div><!-- .row -->
+        </section><!-- .container -->
+    </article><!-- #content -->
+    <footer id="footer" role="contentinfo">
+        <div class="container">
+            <div class="row" id="main-footer">
+                <aside class="col-lg-2 col-md-3 col-sm-4 widget">
+                    <h5 class="widget-title">Leisure Club</h5>
+                    <p>St Andrews Scotland,
+                        United Kingdom KY16 8PN<br><br>
+
+                        Tel  +44 (0) 1334 837000<br>
+                        Fax +44 (0) 1334 837099</p>
+                </aside><!-- .widget -->
+                <aside class="col-lg-2 col-md-3 col-sm-4 widget">
+                    <h5 class="widget-title">The Resort</h5>
+                    <p>
+                        <a href="members.html">Member Bookings</a><br>
+                        <a href="events.html">Open Competitions</a><br>
+                        <a href="contact.html">Location</a><br>
+                        <a href="contact.html">Contact us</a><br>
+                        <a href="resort.html">Our Team</a><br>
+                    </p>
+                </aside><!-- .widget -->
+                <aside class="col-lg-2 col-md-3 col-sm-4 widget">
+                    <h5 class="widget-title">The Club</h5>
+                    <p>
+                        <a href="resort.html">Clubhouse</a><br>
+                        <a href="resort.html">Officers &amp; Council </a><br>
+                        <a href="resort.html">History</a><br>
+                        <a href="resort.html">Locality</a><br>
+                        <a href="media-gallery.html">Gallery</a><br>
+                    </p>
+                </aside><!-- .widget -->
+                <aside class="col-lg-2 col-md-3 col-sm-4 widget">
+                    <h5 class="widget-title">The Courses</h5>
+                    <p>
+                        <a href="activities.html">Headfort Old</a><br>
+                        <a href="activities.html">Headfort New</a><br>
+                        <a href="activities.html">Rankings</a><br>
+                        <a href="activities.html">Practice Facilities</a><br>
+                        <a href="media-gallery.html">Flora and Fauna</a><br>
+                    </p>
+                </aside><!-- .widget -->
+                <aside class="col-lg-2 col-md-3 col-sm-4 widget">
+                    <h5 class="widget-title">Visitors</h5>
+                    <p>
+                        <a href="room-view.html">Visitor Booking</a><br>
+                        <a href="members.html">Green Fees</a><br>
+                        <a href="resort.html">Societies / Groups</a><br>
+                        <a href="testimonials.html">Testimonials</a><br>
+                    </p>
+                </aside><!-- .widget -->
+                <aside class="col-lg-2 col-md-3 col-sm-4 widget">
+                    <a href="index.html"><img src="images/logo-leisure.png" alt=""></a>
+                </aside><!-- .widget -->
+            </div><!-- end .row -->
+            <div class="row" id="absolute-footer">
+                <div class="col-sm-12">
+                    <aside class="widget">
+                        <p>Leisure - HTML Template. Designed with special care by <a href="http://demo.curlythemes.com" target="_blank"><abbr title="Premium WordPress Themes & Plugins">Curly Themes</abbr></a>. All Rights Reserved.
+                            <span class="pull-right hidden-xs">
+		  							<a href="#" class="fa fa-boxed fa-rss" data-toggle="tooltip" data-placement="left" title="Leisure RSS"></a>
+		  							<a href="http://www.pinterest.com/raducretu/curly-themes/" class="fa fa-boxed fa-pinterest" data-toggle="tooltip" data-placement="left" title="Leisure Pintrest Board"></a>
+		  							<a href="https://www.facebook.com/cthemes" class="fa fa-boxed fa-facebook" data-toggle="tooltip" data-placement="left" title="Leisure on Facebook"></a>
+		  							<a href="https://twitter.com/CurlyThemes" class="fa fa-boxed fa-twitter" data-toggle="tooltip" data-placement="left" title="Leisure on Twitter"></a>
+		  						</span>
+                        </p>
+                    </aside><!-- .widget -->
+                </div><!-- .col-sm-12 -->
+            </div><!-- #absolute-footer -->
+        </div><!-- .container -->
+    </footer><!-- #footer -->
+</div><!-- #site -->
+
+<!-- All Pages JS -->
+<script src="<%= BASE_URL %>leisure/html-final/js/jquery-1.11.1.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/bootstrap.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/dropdown-menu.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/waypoints.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/waypoints-sticky.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/jquery.velocity.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/velocity.ui.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/doubletaptogo.js"></script>
+
+<!-- Individual JS -->
+<script src="<%= BASE_URL %>leisure/html-final/js/bootstrap.datepicker.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/jquery.stellar.min.js"></script>
+<script src="<%= BASE_URL %>leisure/html-final/js/owl.carousel.min.js"></script>
+
+<!-- Main JS -->
+<script src="<%= BASE_URL %>leisure/html-final/js/main.js"></script>
+
+</body>
 </html>
