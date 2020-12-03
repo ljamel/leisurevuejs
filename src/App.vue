@@ -9,10 +9,9 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-12 absolute-header text-uppercase">
-                <div class="pull-left"><i class="fa fa-map-marker"></i> ST. ANDREWS, SCOTLAND</div>
+                <div class="pull-left"><i class="fa fa-map-marker"></i> {{zone.name}}</div>
                 <div class="pull-right">
-                  <span class="weather">Friday <i data-icon="B"></i> 24&deg;C</span>
-                  <span class="weather">Saturday <i data-icon="F"></i> 21&deg;C</span>
+                  <span class="weather">{{date}} <i data-icon="sky"></i> {{weather.temp}}&deg;C</span>
                 </div>
               </div><!-- .absolute-header -->
             </div><!-- .row -->
@@ -245,8 +244,8 @@
 
     <!-- <p v-for="(image,name,index) in apiResult.image" :key="image">{{image}} <span v-if="index === 0" ><img v-bind:src="image"/></span></p>-->
 
-    <p v-for="(citys,name,index) in apiResult" :key="index" :data-list-id="citys">{{ name }} {{ citys }} teessstt</p>
-      <h1>{{weather}}kkkk</h1>
+    <p v-for="(citys,name,index) in apiResult" :key="index" :data-list-id="citys">{{ name }} {{ citys }} </p>
+
     <router-view/>
   </div>
 </template>
@@ -261,11 +260,14 @@ export default {
       theme: '',
       searchIndex: '',
       weather: [],
+      date: [],
+      zone: [],
+      sky: [],
     };
   },
   methods : {
     click : function(testt) {
-      this.axios.get("http://api.tvmaze.com/singlesearch/shows?q="+testt).then((response) => {
+      this.axios.get("http://127.0.0.1:8888/"+testt).then((response) => {
         console.log(testt);
         this.theme = 'header-content';
         this.searchIndex= 'hidden';
@@ -281,10 +283,24 @@ export default {
   mounted: function (){
     this.axios.get("http://api.openweathermap.org/data/2.5/weather?q=paris&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
 
-      this.weather = weather.data
+      this.weather = weather.data.main
+      this.zone = weather.data
+      this.sky = weather.data.weather
       console.log(this.weather);
 
     });
+
+    let d = new Date();
+    let weekday = new Array(7);
+    weekday[0] = "Dimanche";
+    weekday[1] = "Lundi";
+    weekday[2] = "Mardi";
+    weekday[3] = "Mercredi";
+    weekday[4] = "Jeudi";
+    weekday[5] = "Vendredi";
+    weekday[6] = "Samedi";
+
+    this.date = weekday[d.getDay()];
   }
 }
 </script>
