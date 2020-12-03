@@ -9,7 +9,7 @@ function exec(re) {
     const con = mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "noura1896"
+        password: ""
     });
 
     con.connect(function (err) {
