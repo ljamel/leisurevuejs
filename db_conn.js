@@ -10,6 +10,7 @@ function exec(re) {
         host: "localhost",
         user: "root",
         password: ""
+
     });
 
     con.connect(function (err) {
