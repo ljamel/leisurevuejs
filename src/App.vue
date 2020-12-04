@@ -27,47 +27,53 @@
                       <a href="index.html"><i class="fa fa-home hidden-xs"></i><span class="visible-xs-inline">Home</span></a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item">
-                      <a href="resort.html">Resort</a>
+                      <a href="/sport">Sport</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="rooms.html">Rooms Listing</a>
+                          <a href="/ballon">Ballon</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="room-view.html">Single Room</a>
+                          <a href="/combat">Combat</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="dining.html">Dining</a>
+                          <a href="/sport">salle de sport</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                          <a href="/forme">Remise en forme</a>
                         </li>
                       </ul>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                      <a href="activities.html">Recreation</a>
+                      <a href="/culture">Culture</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="activities.html">Activities</a>
+                          <a href="/livres">Bibliothèque - Ludothèque</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="children.html">For the Kids</a>
+                          <a href="/enfant">Salle de jeux</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="attractions.html">Attractions</a>
+                          <a href="/muse">Musé</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                          <a href="/Theatre">Théatre</a>
                         </li>
                       </ul>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                      <a href="events.html">Events</a>
+                      <a href="/events">Évenement</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="news.html">News</a>
+                      <a href="/ephemere">Éphémère</a>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                      <a href="typography.html">Features</a>
+                      <a href="/fete">Fête</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="typography.html">Typography</a>
+                          <a href="/concert">/concert</a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                          <a href="elements.html">Elements</a>
+                          <a href="/">Elements</a>
                         </li>
 
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -125,50 +131,44 @@
               <input type="checkbox" class="toggle-nav-input" id="toggle-secondary-nav">
               <ul class="menu">
                 <li class="menu-item">
-                  <a href="rooms.html">Accomodation <em>Rooms &amp; Suites</em></a>
+                  <a href="/saison">Saisons <em>Rooms &amp; Suites</em></a>
                   <ul class="sub-menu bg-accomodation">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="rooms.html">Standard Rooms</a>
+                      <a href="/Hiver">Hiver</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="rooms.html">Deluxe Suites</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="rooms.html">Beach Bungalow</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="rooms.html">Private Villa</a>
+                      <a href="/ete">Été</a>
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="activities.html">Pro Golf Club <em>12 Courses</em></a>
+                  <a href="/nature">Nature <em>12 Courses</em></a>
                   <ul class="sub-menu bg-golf">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Course Card</a>
+                      <a href="/zoo">Zoo</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Championship Golf</a>
+                      <a href="aquarium">Aquarium</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Private Lessons</a>
+                      <a href="jardin">Jardin des plantes</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Golf Pro Bio</a>
+                      <a href="/muse-nature">Musé d'histoire naturelle</a>
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="activities.html">Tennis Courts <em>All Seasons</em></a>
+                  <a href="activities.html">Aventure en plein ciel <em>All Seasons</em></a>
                   <ul class="sub-menu bg-tennis">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Outdoor Courts</a>
+                      <a href="/avion">ulm avion</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Indoor Courts</a>
+                      <a href="/parachute">/parachute</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Tennis Academy</a>
+                      <a href="/montgolfiere">Montgolfière</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="activities.html">Meet our Pro's</a>
@@ -176,19 +176,19 @@
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="activities.html">Swimming Pools <em>Outdoor &amp; Indoor</em></a>
+                  <a href="activities.html">Dans les eaux <em>Outdoor &amp; Indoor</em></a>
                   <ul class="sub-menu bg-pool">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Day &amp; Night Pool</a>
+                      <a href="/bateaux">Bateaux</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Outdoor Pools</a>
+                      <a href="/piscine">Piscine</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Indoor Pools</a>
+                      <a href="/peche">Pêche</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Children Pools</a>
+                      <a href="/plonger">Plonger</a>
                     </li>
                   </ul>
                 </li>
@@ -202,9 +202,10 @@
           <div class="container">
             <div class="row">
               <form id="booking-form" role="form">
-                <div class="col-md-3 col-sm-6 icon-calendar">
-                  <label class="sr-only" for="arrival-date">Arrival</label>
-                  <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" data-date-format="mm/dd/yyyy" id="arrival-date" placeholder="Arrival Date">
+                <div class="col-md-3 col-sm-6">
+                  <i class="fa fa-map-marker rechercheIndex"></i>
+                  <label class="sr-only" >Recherche</label>
+                  <input type="text" class="form-control"  data-date-autoclose="true" placeholder="Recherchee">
                 </div>
                 <div class="col-md-3 col-sm-6 icon-calendar">
                   <label class="sr-only" for="departure-date">Departure</label>
@@ -244,7 +245,7 @@
 
     <!-- <p v-for="(image,name,index) in apiResult.image" :key="image">{{image}} <span v-if="index === 0" ><img v-bind:src="image"/></span></p>-->
 
-    <p v-for="(citys,name,index) in apiResult" :key="index" :data-list-id="citys">{{ name }} {{ citys }} </p>
+      <div v-for="(citys,name,index) in apiResult" :key="index" :data-list-id="citys"> <h1>{{ citys.title }}</h1> <p>{{citys.description}}</p> </div>
 
     <router-view/>
   </div>
@@ -281,7 +282,7 @@ export default {
 
 
   mounted: function (){
-    this.axios.get("http://api.openweathermap.org/data/2.5/weather?q=paris&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
+    this.axios.get("http://api.openweathermap.org/data/2.5/weather?q=Republic of France&lang=fr&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
 
       this.weather = weather.data.main
       this.zone = weather.data
