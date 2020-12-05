@@ -9,7 +9,7 @@ function createDBConnection() {
     return mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "noura1896"
+        password: ""
     });
 }
 function exec(re) {

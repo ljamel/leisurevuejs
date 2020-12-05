@@ -11,7 +11,7 @@
               <div class="col-sm-12 absolute-header text-uppercase">
                 <div class="pull-left"><i class="fa fa-map-marker"></i> {{zone.name}}</div>
                 <div class="pull-right">
-                  <span class="weather">{{date}} <i data-icon="sky"></i> {{weather.temp}}&deg;C</span>
+                  <span class="weather">{{date}} <i data-icon="sky"></i> {{weather}}&deg;C</span>
                 </div>
               </div><!-- .absolute-header -->
             </div><!-- .row -->
@@ -205,32 +205,27 @@
                 <div class="col-md-3 col-sm-6">
                   <i class="fa fa-map-marker rechercheIndex"></i>
                   <label class="sr-only" >Recherche</label>
-                  <input type="text" class="form-control"  data-date-autoclose="true" placeholder="Recherchee">
+                  <input type="text" class="form-control"  data-date-autoclose="true" placeholder="Recherche">
                 </div>
                 <div class="col-md-3 col-sm-6 icon-calendar">
                   <label class="sr-only" for="departure-date">Departure</label>
                   <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" data-date-format="mm/dd/yyyy" id="departure-date" placeholder="Departure Date">
                 </div>
-                <div class="col-md-2 col-sm-4 icon-arrow">
-                  <label class="sr-only" for="adults">Adults</label>
+                <div class="col-md-2 col-sm-4">
+                  <i class="fa fa-child rechercheIndex"></i>
+                  <label class="sr-only" for="adults">Age</label>
                   <select class="form-control" id="adults">
                     <option selected disabled>Adults</option>
-                    <option>1 Adult</option>
-                    <option>2 Adults</option>
-                    <option>3 Adults</option>
-                    <option>4 Adults</option>
+                    <option>En famille</option>
+                    <option>Adultes</option>
+                    <option>Enfants</option>
+                    <option>Tous</option>
                   </select>
                 </div>
-                <div class="col-md-2 col-sm-4 icon-arrow">
-                  <label class="sr-only" for="room">Room</label>
-                  <select class="form-control" id="room">
-                    <option selected disabled>Room</option>
-                    <option>Standard Deluxe</option>
-                    <option>Double Bedroom</option>
-                    <option>Standard Suite</option>
-                    <option>Queen's Suite</option>
-                    <option>King's Suite</option>
-                  </select>
+                <div class="col-md-2 col-sm-4 ">
+                  <i class="fa fa-euro rechercheIndex"></i>
+                  <label class="sr-only" >Budget</label>
+                  <input type="text" class="form-control"  data-date-autoclose="true" placeholder="Budget">
                 </div>
                 <div class="col-md-2 col-sm-4">
                   <input type="submit" class="btn btn-primary btn-block" name="Book a Room" value="Book a Room">
@@ -284,7 +279,7 @@ export default {
   mounted: function (){
     this.axios.get("http://api.openweathermap.org/data/2.5/weather?q=Republic of France&lang=fr&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
 
-      this.weather = weather.data.main
+      this.weather = weather.data.main.temp.toFixed(0)
       this.zone = weather.data
       this.sky = weather.data.weather
       console.log(this.weather);
