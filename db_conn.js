@@ -5,20 +5,22 @@ var url = require("url");
 
 global.re = "e";
 
-function exec(re) {
-    const con = mysql.createConnection({
+function createDBConnection() {
+    return mysql.createConnection({
         host: "localhost",
         user: "root",
         password: "noura1896"
     });
+}
+function exec(re) {
 
-    con.connect(function (err) {
+    createDBConnection().connect(function (err) {
         if (err) throw err;
         var sql = "SELECT * FROM cadito.activitys WHERE description like ?";
         //Send an array with value(s) to replace the escaped values:
-        con.query(sql, ['%' + re + '%'], function (err, result) {
-            global.re = JSON.stringify((result));
+        createDBConnection().query(sql, ['%' + re + '%'], function (err, result) {
             console.log(result);
+            global.re = JSON.stringify((result));
         });
 
     });

@@ -90,6 +90,7 @@
           </aside><!-- .col-sm-12 -->
         </div><!-- .row -->
       </section><!-- .container -->
+      <iframe src="https://opendata.paris.fr/explore/embed/dataset/que-faire-a-paris-/map/?disjunctive.category&disjunctive.tags&disjunctive.address_name&disjunctive.address_zipcode&disjunctive.address_city&disjunctive.access_type&disjunctive.price_type&basemap=jawg.streets&location=11,48.87104,2.35142&static=false&datasetcard=false&scrollWheelZoom=true" width="800" height="450" frameborder="0"></iframe>
     </article><!-- #content -->
   </div>
 </template>
