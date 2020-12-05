@@ -104,6 +104,17 @@
                         </li>
                       </ul>
                     </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                      <a href="/info">Info</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                          <a href="/Info">Actualitée</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                          <a href="/covid">Covid 19</a>
+                        </li>
+                      </ul>
+                    </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-parent-item"><a href="contact.html">Contact</a></li>
                     <li class="menu-item">
                       <a href="#" class="search-button hidden-xs"><i class="fa fa-search"></i></a>
@@ -205,7 +216,14 @@
                 <div class="col-md-3 col-sm-6">
                   <i class="fa fa-map-marker rechercheIndex"></i>
                   <label class="sr-only" >Recherche</label>
-                  <input type="text" class="form-control"  data-date-autoclose="true" placeholder="Recherche">
+                  <input  list="browsers" v-on:keyup="adressf(adressc)" v-model="adressc" type="text" class="form-control"  data-date-autoclose="true" placeholder="Recherche" >
+                  <datalist id="browsers">
+                    <option v-for="(citys,name,index) in adress" :key="index" :data-list-id="citys" :value='citys.properties.label'/>
+                    <option value="Paris" />
+                    <option value="Lille" />
+                    <option value="Lyon" />
+                    <option value="Normandie" />
+                  </datalist>
                 </div>
                 <div class="col-md-3 col-sm-6 icon-calendar">
                   <label class="sr-only" for="departure-date">Departure</label>
@@ -241,6 +259,7 @@
     <!-- <p v-for="(image,name,index) in apiResult.image" :key="image">{{image}} <span v-if="index === 0" ><img v-bind:src="image"/></span></p>-->
 
       <div v-for="(citys,name,index) in apiResult" :key="index" :data-list-id="citys"> <h1>{{ citys.title }}</h1> <p>{{citys.description}}</p> </div>
+      <!--<div v-for="(citys,name,index) in adress" :key="index" :data-list-id="citys"> <p> {{citys.properties.label}}</p> </div>-->
 
     <router-view/>
   </div>
@@ -259,6 +278,8 @@ export default {
       date: [],
       zone: [],
       sky: [],
+      adress: [],
+      adressc: [],
     };
   },
   methods : {
@@ -269,6 +290,14 @@ export default {
         this.searchIndex= 'hidden';
         this.apiResult = response.data
         console.log(this.apiResult);
+
+      });
+    },
+    adressf : function(adressc) {
+      this.axios.get("https://api-adresse.data.gouv.fr/search/?q="+adressc+"&type=housenumber&autocomplete=1").then((response) => {
+        console.log(adressc);
+        this.adress = response.data.features
+        console.log(this.adress);
 
       });
     },
