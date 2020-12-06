@@ -7,12 +7,12 @@
       <section class="container content-padding-lg">
         <div class="row animated">
           <div class="col-sm-8 col-sm-offset-2 text-center">
-            <h1 class="text-center"><small>What can you do with the Leisure Template?</small>AWARD WINNING RESORT</h1>
+            <h3 class="text-center"><small>Que faire ce week end ?</small>Plus de 90 000 activité loisirs sur toutes la France</h3>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ornare eros. Ut pharetra ornare lorem, sit amet bibendum quam imperdiet ut.
             </p>
             <p>Duis diam eros, dignissim sed condimentum ac, vehicula nec nisl. Suspendisse condimentum libero tempus, accumsan augue et, varius dui. Morbi justo tortor, tincidunt ornare magna ut, molestie mattis enim. Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan.
             </p>
-            <a href="resort.html" class="btn btn-inline">What's happening at the Leisure Center?</a>
+            <a href="/plan" class="btn btn-inline">Bon plan loisir ?</a>
           </div><!-- .col-sm-8 -->
         </div><!-- .row -->
       </section><!-- .container -->

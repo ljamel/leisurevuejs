@@ -70,37 +70,7 @@
                       <a href="/fete">Fête</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/concert">/concert</a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                          <a href="/">Elements</a>
-                        </li>
-
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="media-gallery.html">Media Gallery</a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                          <a href="sidebar-left.html">Other Pages</a>
-                          <ul class="sub-menu">
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                              <a href="sidebar-left.html">Left Sidebar</a>
-                            </li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                              <a href="sidebar-right.html">Right Sidebar</a>
-                            </li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                              <a href="members.html">Pricing Table</a>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                              <a href="coming-soon.html">Coming Soon</a>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                              <a href="404.html">404 Page</a>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                              <a href="faq.html">FAQ Page</a>
-                            </li>
-                          </ul>
+                          <a href="/concert">Concert</a>
                         </li>
                       </ul>
                     </li>
@@ -176,13 +146,10 @@
                       <a href="/avion">ulm avion</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/parachute">/parachute</a>
+                      <a href="/parachute">parachute</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="/montgolfiere">Montgolfière</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="activities.html">Meet our Pro's</a>
                     </li>
                   </ul>
                 </li>
@@ -216,7 +183,7 @@
                 <div class="col-md-3 col-sm-6">
                   <i class="fa fa-map-marker rechercheIndex"></i>
                   <label class="sr-only" >Recherche</label>
-                  <input  list="browsers" v-on:keyup="adressf(adressc)" v-model="adressc" type="text" class="form-control"  data-date-autoclose="true" placeholder="Recherche" >
+                  <input  list="browsers" v-on:keyup="adressf(adressc)" v-model="adressc" type="text" class="form-control"  data-date-autoclose="true" placeholder="Ville" >
                   <datalist id="browsers">
                     <option v-for="(citys,name,index) in adress" :key="index" :data-list-id="citys" :value='citys.properties.label'/>
                     <option value="Paris" />
@@ -226,14 +193,13 @@
                   </datalist>
                 </div>
                 <div class="col-md-3 col-sm-6 icon-calendar">
-                  <label class="sr-only" for="departure-date">Departure</label>
-                  <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" data-date-format="mm/dd/yyyy" id="departure-date" placeholder="Departure Date">
+                  <label class="sr-only" for="departure-date">Départ</label>
+                  <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" data-date-format="mm/dd/yyyy" id="departure-date" placeholder="Depart">
                 </div>
                 <div class="col-md-2 col-sm-4">
                   <i class="fa fa-child rechercheIndex"></i>
                   <label class="sr-only" for="adults">Age</label>
                   <select class="form-control" id="adults">
-                    <option selected disabled>Adults</option>
                     <option>En famille</option>
                     <option>Adultes</option>
                     <option>Enfants</option>
@@ -246,7 +212,7 @@
                   <input type="text" class="form-control"  data-date-autoclose="true" placeholder="Budget">
                 </div>
                 <div class="col-md-2 col-sm-4">
-                  <input type="submit" class="btn btn-primary btn-block" name="Book a Room" value="Book a Room">
+                  <input type="submit" class="btn btn-primary btn-block" name="Book a Room" value="Recherche">
                 </div>
               </form>
             </div><!-- .row -->
