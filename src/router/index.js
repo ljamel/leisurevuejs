@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Connect from '../views/Connect.vue'
+import Error from '../views/Error.vue'
 
 Vue.use(VueRouter)
 
@@ -11,6 +13,11 @@ const routes = [
     component: Home
   },
   {
+    path: '*',
+    name: 'Error',
+    component: Error
+  },
+  {
     path: '/test',
     name: 'Test',
     component: () => import(/* webpackChunkName: "about" */ '../views/Test.vue')
@@ -18,7 +25,7 @@ const routes = [
   {
     path: '/connect',
     name: 'Connect',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Connect.vue')
+    component: Connect
   },
   {
     path: '/about',

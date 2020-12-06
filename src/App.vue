@@ -246,6 +246,7 @@ export default {
       sky: [],
       adress: [],
       adressc: [],
+      routec:this.$route.name,
     };
   },
   methods : {
@@ -277,7 +278,11 @@ export default {
       this.weather = weather.data.main.temp.toFixed(0)
       this.zone = weather.data
       this.sky = weather.data.weather
-      console.log(this.weather);
+
+      if(this.routec != "Home"){
+        this.theme = 'header-content';
+        this.searchIndex= 'hidden';
+      }
 
     });
 

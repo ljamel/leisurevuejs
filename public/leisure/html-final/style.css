@@ -473,7 +473,7 @@ hr.xs{
 	background-position: 50% 0%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url('images/bg-header-5.jpg');
+	background-image: url('images/london-eye-945497_1280.jpg');
 	background-position: bottom center;
 }
 #header canvas{
@@ -1877,7 +1877,7 @@ a .wp-image:hover{
  */
 
 .fullwidth-row{
-	background-image: url('images/bg-parallax-3.jpg'); 
+	background-image: url('images/photographer-407068_640.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;  
 	background-position: center top;
@@ -2931,16 +2931,16 @@ ul[class*="block-grid-"] .link-image img{
  
  /* Menu */
  .bg-accomodation{
- 	background: url('images/bg-acommodation.jpg') no-repeat top left;
+ 	background: url('images/flower-field-250016_640.jpg') no-repeat top left;
  }
  .bg-golf{
- 	background: url('images/bg-golf.jpg') no-repeat top left;
+ 	background: url('images/butterfly-1127666_640.jpg') no-repeat top left;
  }
  .bg-tennis{
- 	background: url('images/bg-tennis.jpg') no-repeat top left;
+ 	background: url('images/paragliding-1220000_640.jpg') no-repeat top left;
  }
  .bg-pool{
- 	background: url('images/bg-swimming.jpg') no-repeat top left;
+ 	background: url('images/diver-549369_640.jpg') no-repeat top left;
  }
 
 .rechercheIndex {
