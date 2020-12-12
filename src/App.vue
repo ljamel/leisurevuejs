@@ -1,7 +1,5 @@
 <template>
 
-
-
     <div id="nav">
 
       <header id="header" class="head" :class="theme"  role="banner">
@@ -24,64 +22,64 @@
                   <input type="checkbox" id="toggle-main-nav" class="toggle-nav-input">
                   <ul id="menu-main-menu" class="menu">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item">
-                      <a href="index.html"><i class="fa fa-home hidden-xs"></i><span class="visible-xs-inline">Home</span></a>
+                      <a href="/"><i class="fa fa-home hidden-xs"></i><span class="visible-xs-inline">Home</span></a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item">
-                      <a href="/sport">Sport</a>
+                      <a href="/page/sport">Sport</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/ballon">Ballon</a>
+                          <a href="/page/ballon">Ballon</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/combat">Combat</a>
+                          <a href="/page/combat">Combat</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/sport">salle de sport</a>
+                          <a href="/page/sport">salle de sport</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/forme">Remise en forme</a>
+                          <a href="/page/forme">Remise en forme</a>
                         </li>
                       </ul>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                      <a href="/culture">Culture</a>
+                      <a href="/page/culture">Culture</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/livres">Bibliothèque - Ludothèque</a>
+                          <a href="/page/livres">Bibliothèque - Ludothèque</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/enfant">Salle de jeux</a>
+                          <a href="/page/enfant">Salle de jeux</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/muse">Musé</a>
+                          <a href="/page/muse">Musé</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/Theatre">Théatre</a>
+                          <a href="/page/Theatre">Théatre</a>
                         </li>
                       </ul>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                      <a href="/events">Évenement</a>
+                      <a href="/page/events">Évenement</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/ephemere">Éphémère</a>
+                      <a href="/page/ephemere">Éphémère</a>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                      <a href="/fete">Fête</a>
+                      <a href="/page/fete">Ludique</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/concert">Concert</a>
+                          <a href="/page/concert">Jeux sur plateaux échec</a>
                         </li>
                       </ul>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                      <a href="/info">Info</a>
+                      <a href="/page/info">Info</a>
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/Info">Actualitée</a>
+                          <a href="/page/Info">Actualitée</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="/covid">Covid 19</a>
+                          <a href="/page/covid">Covid 19</a>
                         </li>
                       </ul>
                     </li>
@@ -112,21 +110,21 @@
               <input type="checkbox" class="toggle-nav-input" id="toggle-secondary-nav">
               <ul class="menu">
                 <li class="menu-item">
-                  <a href="/saison">Saisons <em>Rooms &amp; Suites</em></a>
+                  <a href="/page/saison">Saisons <em>Rooms &amp; Suites</em></a>
                   <ul class="sub-menu bg-accomodation">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/Hiver">Hiver</a>
+                      <a href="/page/Hiver">Hiver</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/ete">Été</a>
+                      <a href="/page/ete">Été</a>
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="/nature">Nature <em>12 Courses</em></a>
+                  <a href="/page/nature">Nature <em>12 Courses</em></a>
                   <ul class="sub-menu bg-golf">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/zoo">Zoo</a>
+                      <a href="/page/zoo">Zoo</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="aquarium">Aquarium</a>
@@ -135,7 +133,7 @@
                       <a href="jardin">Jardin des plantes</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/muse-nature">Musé d'histoire naturelle</a>
+                      <a href="/page/muse-nature">Musé d'histoire naturelle</a>
                     </li>
                   </ul>
                 </li>
@@ -143,13 +141,13 @@
                   <a href="activities.html">Aventure en plein ciel <em>All Seasons</em></a>
                   <ul class="sub-menu bg-tennis">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/avion">ulm avion</a>
+                      <a href="/page/avion">ulm avion</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/parachute">parachute</a>
+                      <a href="/page/parachute">parachute</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/montgolfiere">Montgolfière</a>
+                      <a href="/page/montgolfiere">Montgolfière</a>
                     </li>
                   </ul>
                 </li>
@@ -157,16 +155,16 @@
                   <a href="activities.html">Dans les eaux <em>Outdoor &amp; Indoor</em></a>
                   <ul class="sub-menu bg-pool">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/bateaux">Bateaux</a>
+                      <a href="/page/bateaux">Bateaux</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/piscine">Piscine</a>
+                      <a href="/page/piscine">Piscine</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/peche">Pêche</a>
+                      <a href="/page/peche">Pêche</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="/plonger">Plonger</a>
+                      <a href="/page/plonger">Plonger</a>
                     </li>
                   </ul>
                 </li>
@@ -209,7 +207,7 @@
                 <div class="col-md-2 col-sm-4 ">
                   <i class="fa fa-euro rechercheIndex"></i>
                   <label class="sr-only" >Budget</label>
-                  <input type="text" class="form-control"  data-date-autoclose="true" placeholder="Budget">
+                  <input type="number" class="form-control"  data-date-autoclose="true" placeholder="Budget">
                 </div>
                 <div class="col-md-2 col-sm-4">
                   <input type="submit" class="btn btn-primary btn-block" name="Book a Room" value="Recherche">
@@ -247,16 +245,15 @@ export default {
       adress: [],
       adressc: [],
       routec:this.$route.name,
+      routecat:this.$route.params.cat,
     };
   },
   methods : {
     click : function(testt) {
       this.axios.get("http://127.0.0.1:8888/"+testt).then((response) => {
-        console.log(testt);
         this.theme = 'header-content';
         this.searchIndex= 'hidden';
         this.apiResult = response.data
-        console.log(this.apiResult);
 
       });
     },
@@ -282,10 +279,15 @@ export default {
       if(this.routec != "Home"){
         this.theme = 'header-content';
         this.searchIndex= 'hidden';
+        this.axios.get("http://127.0.0.1:8888/"+this.routecat).then((response) => {
+          this.apiResult = response.data
+          console.log(this.routecat);
+        });
       }
 
     });
 
+    // translate datetime FR
     let d = new Date();
     let weekday = new Array(7);
     weekday[0] = "Dimanche";

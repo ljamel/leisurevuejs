@@ -4,7 +4,7 @@
       <section class="container content-padding-lg">
         <div class="row animated">
           <div class="col-sm-8 col-sm-offset-2 text-center">
-            <h3>Résultats!</h3>
+            <h3>Résultats page!</h3>
           </div>
         </div><!-- .row -->
       </section><!-- .container -->
@@ -25,7 +25,6 @@ export default {
   mounted: function(){
    this.theme = 'header-content';
    this.searchIndex= 'hidden';
-   console.log(this.$route.name);
   }
 }
 </script>

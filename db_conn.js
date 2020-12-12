@@ -19,7 +19,6 @@ function exec(re) {
         var sql = "SELECT * FROM cadito.activitys WHERE description like ?";
         //Send an array with value(s) to replace the escaped values:
         createDBConnection().query(sql, ['%' + re + '%'], function (err, result) {
-            console.log(result);
             global.re = JSON.stringify((result));
         });
 

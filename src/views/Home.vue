@@ -12,7 +12,7 @@
             </p>
             <p>Duis diam eros, dignissim sed condimentum ac, vehicula nec nisl. Suspendisse condimentum libero tempus, accumsan augue et, varius dui. Morbi justo tortor, tincidunt ornare magna ut, molestie mattis enim. Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan.
             </p>
-            <a href="/plan" class="btn btn-inline">Bon plan loisir ?</a>
+            <a href="/page/plan" class="btn btn-inline">Bon plan loisir ?</a>
           </div><!-- .col-sm-8 -->
         </div><!-- .row -->
       </section><!-- .container -->
