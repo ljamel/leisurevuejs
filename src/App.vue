@@ -177,11 +177,15 @@
         <div class="booking-row content-padding-xs" :class="searchIndex">
           <div class="container">
             <div class="row">
-              <form id="booking-form" role="form">
+              <form method="get" id="booking-form" role="form" action="/">
+                <div class="col-md-3 col-sm-6 icon-next">
+                  <label class="sr-only" for="departure-date">Départ</label>
+                  <input type="text" class="form-control" placeholder="Recherche" name="search">
+                </div>
                 <div class="col-md-3 col-sm-6">
                   <i class="fa fa-map-marker rechercheIndex"></i>
                   <label class="sr-only" >Recherche</label>
-                  <input  list="browsers" v-on:keyup="adressf(adressc)" v-model="adressc" type="text" class="form-control"  data-date-autoclose="true" placeholder="Ville" >
+                  <input  list="browsers" v-on:keyup="adressf(adressc)" v-model="adressc" type="text" class="form-control"  data-date-autoclose="true" placeholder="Ville" name="city" >
                   <datalist id="browsers">
                     <option v-for="(citys,name,index) in adress" :key="index" :data-list-id="citys" :value='citys.properties.label'/>
                     <option value="Paris" />
@@ -190,14 +194,10 @@
                     <option value="Normandie" />
                   </datalist>
                 </div>
-                <div class="col-md-3 col-sm-6 icon-calendar">
-                  <label class="sr-only" for="departure-date">Départ</label>
-                  <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" data-date-format="mm/dd/yyyy" id="departure-date" placeholder="Depart">
-                </div>
                 <div class="col-md-2 col-sm-4">
                   <i class="fa fa-child rechercheIndex"></i>
                   <label class="sr-only" for="adults">Age</label>
-                  <select class="form-control" id="adults">
+                  <select class="form-control" id="adults" name="cat">
                     <option>En famille</option>
                     <option>Adultes</option>
                     <option>Enfants</option>
@@ -207,10 +207,10 @@
                 <div class="col-md-2 col-sm-4 ">
                   <i class="fa fa-euro rechercheIndex"></i>
                   <label class="sr-only" >Budget</label>
-                  <input type="number" class="form-control"  data-date-autoclose="true" placeholder="Budget">
+                  <input type="number" class="form-control"  data-date-autoclose="true" placeholder="Budget" name="price">
                 </div>
                 <div class="col-md-2 col-sm-4">
-                  <input type="submit" class="btn btn-primary btn-block" name="Book a Room" value="Recherche">
+                  <input type="submit" class="btn btn-primary btn-block" >
                 </div>
               </form>
             </div><!-- .row -->
@@ -222,7 +222,13 @@
 
     <!-- <p v-for="(image,name,index) in apiResult.image" :key="image">{{image}} <span v-if="index === 0" ><img v-bind:src="image"/></span></p>-->
 
-      <div v-for="(citys,name,index) in apiResult" :key="index" :data-list-id="citys"> <h1>{{ citys.title }}</h1> <p>{{citys.description}}</p> </div>
+      <div v-for="(citys,name,index) in apiResult" :key="index" :data-list-id="citys">
+        <h1>{{ citys.title }}</h1>
+        <p>{{citys.description}}</p>
+
+        {{citys}}
+        <a :href="'/show/'+citys.slug">En savoir plus</a>
+      </div>
       <!--<div v-for="(citys,name,index) in adress" :key="index" :data-list-id="citys"> <p> {{citys.properties.label}}</p> </div>-->
 
     <router-view/>

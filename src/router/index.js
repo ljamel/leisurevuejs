@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Connect from '../views/Connect.vue'
 import Error from '../views/Error.vue'
 import Page from '../views/Page.vue'
+import Show from '../views/Show.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,11 @@ const routes = [
     path: '/page/:cat',
     name: 'Page',
     component: Page
+  },
+  {
+    path: '/show/:page',
+    name: 'Show',
+    component: Show
   },
   {
     path: '*',

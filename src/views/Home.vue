@@ -2,17 +2,17 @@
 
   <div id="app">
   <!--<img class="indeximg" alt="img" src="../assets/index.png" />-->
-
     <article id="content">
       <section class="container content-padding-lg">
         <div class="row animated">
           <div class="col-sm-8 col-sm-offset-2 text-center">
             <h3 class="text-center"><small>Que faire ce week end ?</small>Plus de 90 000 activité loisirs sur toutes la France</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ornare eros. Ut pharetra ornare lorem, sit amet bibendum quam imperdiet ut.
+            <p class="lead">Les loisirs permettent de tuer l’ennui et de redonner gout à la vie.
             </p>
-            <p>Duis diam eros, dignissim sed condimentum ac, vehicula nec nisl. Suspendisse condimentum libero tempus, accumsan augue et, varius dui. Morbi justo tortor, tincidunt ornare magna ut, molestie mattis enim. Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan.
+            <p>Pourtant, il arrive que les personnes soient en difficulté pour trouver la bonne activité à faire lors de son temps libre,
+              Il arrive également que la personne ne trouve pas le lieu pour faire les activités en question. Notre site web vous propose des solutions à vos problèmes.
             </p>
-            <a href="/page/plan" class="btn btn-inline">Bon plan loisir ?</a>
+            <a href="/page/plan" class="btn btn-inline">Bon plan loisir </a>
           </div><!-- .col-sm-8 -->
         </div><!-- .row -->
       </section><!-- .container -->
@@ -31,7 +31,7 @@
                 </p>
                 <p>Vous trouverez des activités et de loisirs près de chez vous.
                 </p>
-                <a href="resort.html" class="btn btn-inline">Explore our Deluxe Golf Course</a>
+                <a href="/page/e" class="btn btn-inline">Voyager dans d'autre regions</a>
 
 
               </div><!-- .content-column -->
@@ -42,50 +42,46 @@
       <section class="container content-padding-lg">
         <div class="row animated">
           <aside class="col-sm-12">
-            <h2 class="text-center"><small>What can you do at the Leisure Template?</small>LEISURE CLUB ACTIVITIES</h2>
+            <h2 class="text-center"><small>Selection des activités loisirs</small>Les meilleurs activités loisirs</h2>
             <div class="services-carousel">
+
+
               <div class="item">
-                <a href="activities.html" class="link-image"><img src="https://loisirsetsports.com/templates/holidaysnew/images/paris.jpg" alt=""></a>
+                <a href="activities.html" class="link-image"><img src="../assets/agroville.png" alt=""></a>
                 <div class="item-content">
-                  <h4><a href="activities.html">Welness &amp; Spa Gateaway Weekend</a></h4>
-                  <p>Curabitur est gravida et libero vitae dictum. Magna pars studiorum, prodita quaerimus. </p>
+                  <h4><a href="/show_activiter/Acrogivry-:-l%27Aventure-en-Forêt-3">Acrogivry : l'Aventure en Forêt</a></h4>
+                  <p>{{ "A proximité de la Voie Verte, découvrez la plus grande Aventure en Forêt de Bourgogne, située à Givry au cœur de la Côte Chalonnaise, à 10 km de Chalon. Venez vous amuser sur 24 parcours d'acrobranches, sur plus de 200 jeux aériens et 20 tyroliennes dont 2 géantes de 250 mètres … 10 parcours enfants dont 2 parcours Bambin entièrement sécurisé à partir de 3 ans et 14 parcours pour toute la famille de 8 à 77 ans… Parc forestier accessible gratuitement pour les accompagnateurs. Aire de pique-nique ombragée, buvette, restauration possible...." | truncate(300, '...') }} </p>
                 </div>
               </div>
+
               <div class="item">
-                <a href="children.html" class="link-image"><img src="https://loisirsetsports.com/templates/holidaysnew/images/lion.jpg" alt=""></a>
+                <a href="activities.html" class="link-image"><img src="../assets/acrobate1.png" alt=""></a>
                 <div class="item-content">
-                  <h4><a href="children.html">Indoor &amp; Outdoor Swimming Pools</a></h4>
-                  <p>Quam diu etiam furor iste tuus nos eludet? Curabitur est gravida et libero vitae dictum. </p>
+                  <h4><a href="activities.html">Acro'Bath, Parc de Loisirs Nature</a></h4>
+                  <p>{{ "Aventure et détente. Quoi de mieux qu'une forêt pour vivre l'aventure ! Découvrez votre adresse ou mettez à l'épreuve vos forces, votre équilibre et votre sang-froid pour évoluer d'arbre en arbre. Les 6 niveaux (mini-kid à partir de 3 ans, 3 boucles kids pour les 6/9 ans et 3 parcours ados adultes) que vous offre Acro'Bath séduiront les débutants comme les plus téméraires. Quoi de mieux qu'une forêt pour se détendre ? Après l'émotion de la dernière tyrolienne, l'aire de pique-nique, son barbecue, l'acro-snack terroir, les jeux géants ou le jeu de piste botanique vous attendent pour enrichir votre journée en forêt. Nombreuses animations et spectacles pendant toute la saison ! Circuit L’Arbre en Poésie - Balade Histoires d'arbres - Jeu La Clé des Bois... Demandez-les à l'accueil ! Nouveautés 2012 : la balade de Sylvette (circuit d'interprétation et de découverte de la forêt des 3 Monts), le katamino géant ou les jambes de bois et de nouveaux ateliers acrobatiques. Réservation conseillée. Aire de pique-nique ombragée. Buvette et petit snack l'été." | truncate(300, '...') }} </p>
                 </div>
               </div>
+
               <div class="item">
-                <a href="dining.html" class="link-image"><img src="images/food.jpg" alt=""></a>
+                <a href="activities.html" class="link-image"><img src="../assets/airescargo.png" alt=""></a>
                 <div class="item-content">
-                  <h4><a href="dining.html">International Cuisine for all Your Tastes</a></h4>
-                  <p>A communi observantia non est recedendum. Cum ceteris in veneratione tui montes. </p>
+                  <h4><a href="activities.html">Ludothèque </a></h4>
+                  <p> {{ "Ludothèque Envie de passer un moment avec vos enfants autour d'un jeu de société adapté à leur âge. Vous y trouverez livres, jeux de sociétés, jeux de rôle, jeux pour bébés... Pour trouver d'autres activités pour enfants près de chez vous, faites une recherche avec notre outil de recherche d'activités." | truncate(300, '...') }} </p>
                 </div>
               </div>
+
               <div class="item">
-                <a href="activities.html" class="link-image"><img src="images/sail.jpg" alt=""></a>
+                <a href="activities.html" class="link-image"><img src="../assets/divertiparc.png" alt=""></a>
                 <div class="item-content">
-                  <h4><a href="activities.html">Take our Yacht and Visit the Surroundings</a></h4>
-                  <p>Prima luce, cum quibus mons aliud  consensu ab eo. Quid securi etiam tamquam eu fugiat. </p>
+                  <h4><a href="activities.html">Diverti'parc </a></h4>
+                  <p>
+                    {{ "Un parc d’un nouveau genre ! Labyrinthes et jeux géants , réserve des vaches du monde. Des nouveautés : le maxi-parcours araignée tout en filets avec 15 ateliers d'agilité en forêt : balançoires de cordes, lianes suspendues, filets du pirates, échelles de cordes... Une journée de loisirs pour toute la famille dans un parc de 12 hectares alliant Nature et Biodiversité. Promenades au cœur des labyrinthes, permanents ou saisonniers, de blé, maïs, gazon, charmilles, pierres et fleurs multicolores, bambous, mais aussi du Minotaure en cassis et groseilles... Défis sur les jeux géants en bois installés sous 3 halles couvertes. Balade contée et chasse au trésor en forêt. Défoulement sur les jeux gonflables, trampolines, karts à pédales, mini-golf familiale, tyrolienne... En forêt, dès 3 ans, les enfants évolueront sur ponts de singe, tunnel en bois...D'autres préfèreront marcher à même le sol sur le sentier 'pieds nus' aménagé pour de meilleures découvertes sensorielles sur galets, rondins de bois, sable, écorces... Découverte des 30 races de vaches de la réserve animalière et goûter des vaches tous les jours à 15h. Tables pique-nique, snack, bar, boutique. Animaux non admis. Animations et tarifs variables au fil des saisons (tarif famille, carte pass annuelle). Groupes sur réservation. Sur le site, hébergements insolites (roulottes de campagne, cabanes Pods, carré d'Etoiles, écolodge 'vache labyrinthe' prochainement)" | truncate(300, '...') }}
+                 </p>
                 </div>
               </div>
-              <div class="item">
-                <a href="rooms.html" class="link-image"><img src="images/room.jpg" alt=""></a>
-                <div class="item-content">
-                  <h4><a href="rooms.html">Studios &amp; VIP Exclusive Apartments</a></h4>
-                  <p>Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla. </p>
-                </div>
-              </div>
-              <div class="item">
-                <a href="activities.html" class="link-image"><img src="images/fitness.jpg" alt=""></a>
-                <div class="item-content">
-                  <h4><a href="activities.html">Pro Fitness Instructor for Every Day Classes</a></h4>
-                  <p>Praeterea iter est quasdam res quas ex communi. Vivamus sagittis lacus vel augue laoreet. </p>
-                </div>
-              </div>
+
+
+
             </div><!-- .services-carousel -->
           </aside><!-- .col-sm-12 -->
         </div><!-- .row -->
@@ -108,6 +104,8 @@ export default {
       errorClass: 'text-danger',
       head: 'header-content'
     }
-  }
+  },
+
+
 }
 </script>

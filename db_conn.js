@@ -13,7 +13,6 @@ function createDBConnection() {
     });
 }
 function exec(re) {
-
     createDBConnection().connect(function (err) {
         if (err) throw err;
         var sql = "SELECT * FROM cadito.activitys WHERE description like ?";
@@ -21,8 +20,8 @@ function exec(re) {
         createDBConnection().query(sql, ['%' + re + '%'], function (err, result) {
             global.re = JSON.stringify((result));
         });
-
     });
+    createDBConnection().destroy();
 }
 
 
