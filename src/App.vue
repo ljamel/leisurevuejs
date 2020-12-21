@@ -276,7 +276,7 @@ export default {
 
 
   mounted: function (){
-    this.axios.get("https://api.openweathermap.org/data/2.5/weather?q=Republic of France&lang=fr&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
+    this.axios.get("http://api.openweathermap.org/data/2.5/weather?q=Republic of France&lang=fr&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
 
       this.weather = weather.data.main.temp.toFixed(0)
       this.zone = weather.data
