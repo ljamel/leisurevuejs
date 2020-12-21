@@ -285,7 +285,7 @@ export default {
       if(this.routec != "Home"){
         this.theme = 'header-content';
         this.searchIndex= 'hidden';
-        this.axios.get("http://127.0.0.1:8888/"+this.routecat).then((response) => {
+        this.axios.get("https://127.0.0.1:8888/"+this.routecat).then((response) => {
           this.apiResult = response.data
           console.log(this.routecat);
         });
