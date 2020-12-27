@@ -256,7 +256,7 @@ export default {
   },
   methods : {
     click : function(testt) {
-      this.axios.get("http://127.0.0.1:8888/"+testt).then((response) => {
+      this.axios.get(":8888/"+testt).then((response) => {
         this.theme = 'header-content';
         this.searchIndex= 'hidden';
         this.apiResult = response.data
@@ -276,7 +276,7 @@ export default {
 
 
   mounted: function (){
-    this.axios.get("http://api.openweathermap.org/data/2.5/weather?q=Republic of France&lang=fr&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
+    this.axios.get("https://api.openweathermap.org/data/2.5/weather?q=Republic of France&lang=fr&appid=7e5877c2acfbadb8e997311a27a2f07e&units=metric").then((weather) => {
 
       this.weather = weather.data.main.temp.toFixed(0)
       this.zone = weather.data
@@ -285,7 +285,7 @@ export default {
       if(this.routec != "Home"){
         this.theme = 'header-content';
         this.searchIndex= 'hidden';
-        this.axios.get("https://127.0.0.1:8888/"+this.routecat).then((response) => {
+        this.axios.get("http://127.0.0.1:8888/"+this.routecat).then((response) => {
           this.apiResult = response.data
           console.log(this.routecat);
         });

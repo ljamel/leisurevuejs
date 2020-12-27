@@ -13,15 +13,21 @@ function createDBConnection() {
     });
 }
 function exec(re) {
-    createDBConnection().connect(function (err) {
-        if (err) throw err;
-        var sql = "SELECT * FROM cadito.activitys WHERE description like ?";
-        //Send an array with value(s) to replace the escaped values:
-        createDBConnection().query(sql, ['%' + re + '%'], function (err, result) {
+
+    const MongoClient = require('mongodb').MongoClient;
+    const uri = "mongodb+srv://test:nono1896@cluster0.bvhvj.mongodb.net?retryWrites=true&w=majority";
+    const client = new MongoClient(uri, { useNewUrlParser: true });
+    client.connect(err => {
+
+        var name = re;
+
+        client.db("sample_restaurants").
+        collection("restaurants").find({'name': {'$regex': name}}).toArray(function(err, result) {
+            if (err) throw err;
+            client.close();
             global.re = JSON.stringify((result));
         });
     });
-    createDBConnection().destroy();
 }
 
 
